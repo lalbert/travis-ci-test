@@ -1,1 +1,6 @@
 language: php
+
+env:
+  global:
+    - ENV_GLOBAL=global
+    
