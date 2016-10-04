@@ -3,4 +3,6 @@ language: php
 env:
   global:
     - ENV_GLOBAL=global
+    - ENV_GLOBAL=global-2
+    - ENV_GLOBAL2=global.2
     
