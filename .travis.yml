@@ -1,11 +1,7 @@
 language: php
 
 php:
-  - 5.1
-  - 5.2
-  - 5.2.5
-  - 5.8
-  - 6
+  - 5
   - 7
   - hhvm
   - nightly
@@ -43,7 +39,7 @@ after_success:
   - echo "Yehhh!"
 
 after_failure:
-  - echo ":("
+  - echo "Oops!"
   
 before_deploy:
   - echo "Before deploy"
