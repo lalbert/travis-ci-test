@@ -3,7 +3,8 @@ language: php
 env:
   global:
     - ENV_GLOBAL=global
-    - ENV_GLOBAL=global-2
-    - ENV_GLOBAL2=global.2
-    - ENV_LINE_1=inline1 ENV_LINE_2=inline2 ENV_LINE_3=inline3
+    - ENV_LINE_1=inline1 ENV_LINE_2=inline2
+  matrix:
+    - ENV_MATRIX=matrix
+    - ENV_MATRIX_LINE_1=inline1 ENV_MATRIX_LINE_2=inline2
     
