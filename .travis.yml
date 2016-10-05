@@ -1,5 +1,20 @@
 language: php
 
+php:
+  - 5.1
+  - 5.2
+  - 5.2.5
+  - 5.8
+  - 6
+  - 7
+  - hhvm
+  - nightly
+  
+services:
+  - mariadb
+  - mongodb
+  - redis
+
 env:
   global:
     - ENV_GLOBAL=global
@@ -8,3 +23,42 @@ env:
     - ENV_MATRIX=matrix
     - ENV_MATRIX_INLINE_1=inline1 ENV_MATRIX_INLINE_2=inline2
     
+before_install:
+  - echo "Before install"
+  - echo "..."
+  
+install:
+  - echo "Install"
+  - echo "..."
+  
+before_script:
+  - echo "Before script"
+  - echo "..."
+  
+script:
+  - echo "Launch script"
+  - exit(0)
+  
+after_success:
+  - echo "Yehhh!"
+
+after_failure:
+  - echo ":("
+  
+before_deploy:
+  - echo "Before deploy"
+  - echo "..."
+
+deploy:
+  - echo "deploy"
+
+after_deploy:
+  - echo "After deploy"
+  - echo "..."
+  
+after_script:
+  - echo "After script"
+  - echo "..."
+  
+notifications:
+  email: false
