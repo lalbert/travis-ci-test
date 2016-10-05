@@ -25,11 +25,9 @@ before_install:
   
 install:
   - echo "Install"
-  - echo "..."
   
 before_script:
   - echo "Before script"
-  - echo "..."
   
 script:
   - echo "Launch script"
@@ -40,17 +38,6 @@ after_success:
 
 after_failure:
   - echo "Oops!"
-  
-before_deploy:
-  - echo "Before deploy"
-  - echo "..."
-
-deploy:
-  - echo "deploy"
-
-after_deploy:
-  - echo "After deploy"
-  - echo "..."
   
 after_script:
   - echo "After script"
