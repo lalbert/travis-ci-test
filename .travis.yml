@@ -7,7 +7,7 @@ php:
 #  - nightly
   
 services:
-  - mariadb
+  - mysql
   - mongodb
   - redis
 
