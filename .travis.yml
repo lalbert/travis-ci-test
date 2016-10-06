@@ -1,10 +1,1 @@
 language: php
-
-env:
-  global:
-    - ENV_GLOBAL=global
-    - ENV_GLOBAL_INLINE_1=inline1 ENV_GLOBAL_INLINE_2=inline2
-  matrix:
-    - ENV_MATRIX=matrix
-    - ENV_MATRIX_INLINE_1=inline1 ENV_MATRIX_INLINE_2=inline2
-    
