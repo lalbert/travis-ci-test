@@ -31,6 +31,10 @@ matrix:
     # duplicate
     - php: 7
       env: ENV_MATRIX=matrix
+    # duplicate exclude
+    - php: hhvm
+      env: ENV_MATRIX=matrix
+      
 git:
   depth: 25
   
