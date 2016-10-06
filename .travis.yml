@@ -28,9 +28,14 @@ matrix:
       env: ENV_NIGHTLY=nightly
       addons:
         mariadb: 5.5
-    
 git:
   depth: 25
+  
+addons:
+  apt:
+    packages:
+    - cmake
+    - time
     
 before_install:
   - echo "Before install"
