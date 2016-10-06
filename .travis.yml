@@ -29,6 +29,9 @@ matrix:
       addons:
         mariadb: 5.5
     
+git:
+  depth: 25
+    
 before_install:
   - echo "Before install"
   - echo "..."
