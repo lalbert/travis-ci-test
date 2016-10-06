@@ -28,13 +28,6 @@ matrix:
       env: ENV_NIGHTLY=nightly
       addons:
         mariadb: 5.5
-    # duplicate
-    - php: 7
-      env: ENV_MATRIX=matrix
-    # duplicate exclude
-    - php: hhvm
-      env: ENV_MATRIX=matrix
-      
 git:
   depth: 25
   
